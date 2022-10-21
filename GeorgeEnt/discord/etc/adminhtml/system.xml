@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="GeorgeEnt" translate="label" sortOrder="10">
+            <label>GeorgeEnt</label>
+        </tab>
+        <section id="discord" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Discord</label>
+            <tab>GeorgeEnt</tab>
+            <resource>GeorgeEnt_Discord::discord_config</resource>
+            <group id="discord_hook" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Webhook Config</label>
+                <field id="disc_auth_url" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Webhook URL</label>
+                    <comment>Generate your webhook URL in your chosen discord channel.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
